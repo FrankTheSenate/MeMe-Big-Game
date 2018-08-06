@@ -21,6 +21,12 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <objects name="objects">
+    <object>objects\obj_grass</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\testing_room_1</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
