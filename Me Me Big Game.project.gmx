@@ -7,10 +7,19 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player Sprites">
-      <sprite>sprites\spr_Nick_Bullet_All</sprite>
-      <sprite>sprites\spr_Richard_Bullet_All</sprite>
-      <sprite>sprites\spr_Vick_Bullet_All</sprite>
-      <sprite>sprites\spr_Picnic_Bullet_All</sprite>
+      <sprites name="Nick">
+        <sprite>sprites\spr_Nick_Bullet_All</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Walking</sprite>
+      </sprites>
+      <sprites name="Richard">
+        <sprite>sprites\spr_Richard_Bullet_All</sprite>
+      </sprites>
+      <sprites name="Vick">
+        <sprite>sprites\spr_Vick_Bullet_All</sprite>
+      </sprites>
+      <sprites name="Picnic">
+        <sprite>sprites\spr_Picnic_Bullet_All</sprite>
+      </sprites>
     </sprites>
     <sprites name="Platforms">
       <sprite>sprites\spr_Grass_Left</sprite>
