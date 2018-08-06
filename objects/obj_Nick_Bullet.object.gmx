@@ -52,6 +52,7 @@ image_index = 1
             <string>jump = keyboard_check(ord("W"))
 right = keyboard_check(ord("D"))
 left = keyboard_check(ord("A"))
+gravity = 10
 
 if right and !left
 {
@@ -73,6 +74,7 @@ sprite_index = spr_Nick_Bullet_All
 image_index = 1
 hspeed = 0
 }
+
 
 
 
