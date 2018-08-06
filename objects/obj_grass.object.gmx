@@ -91,6 +91,11 @@ if checkleft and !checkright and checkdown and checkup
 {
 sprite_index = spr_Dirt_Right
 }
+if !checkleft and !checkright and checkdown and checkup
+{
+sprite_index = spr_Dirt_Left_Right
+}
+
 </string>
           </argument>
         </arguments>
