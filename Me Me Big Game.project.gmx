@@ -5,7 +5,20 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprites name="Player Sprites">
+      <sprite>sprites\spr_Nick_Bullet_All</sprite>
+      <sprite>sprites\spr_Richard_Bullet_All</sprite>
+      <sprite>sprites\spr_Vick_Bullet_All</sprite>
+      <sprite>sprites\spr_Picnic_Bullet_All</sprite>
+    </sprites>
+    <sprites name="Platforms">
+      <sprite>sprites\spr_Grass_Left</sprite>
+      <sprite>sprites\spr_Grass_Mid</sprite>
+      <sprite>sprites\spr_Grass_Right</sprite>
+      <sprite>sprites\spr_Grass_Short</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <help>
