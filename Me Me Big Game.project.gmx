@@ -17,12 +17,27 @@
       <sprite>sprites\spr_Grass_Mid</sprite>
       <sprite>sprites\spr_Grass_Right</sprite>
       <sprite>sprites\spr_Grass_Short</sprite>
+      <sprite>sprites\spr_Dirt_Core</sprite>
+      <sprite>sprites\spr_Dirt_Middle_Bottom</sprite>
+      <sprite>sprites\spr_Dirt_Corner_Left</sprite>
+      <sprite>sprites\spr_Dirt_Corner_Right</sprite>
+      <sprite>sprites\spr_Dirt_Bottom</sprite>
+      <sprite>sprites\spr_DirtGrass_Left</sprite>
+      <sprite>sprites\spr_DirtGrass_Right</sprite>
+      <sprite>sprites\spr_DirtGrass_Nub</sprite>
+      <sprite>sprites\spr_DirtGrass_Middle</sprite>
+      <sprite>sprites\spr_Dirt_Right</sprite>
+      <sprite>sprites\spr_Dirt_Left</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_grass</object>
+    <object>objects\obj_Nick_Bullet</object>
+    <object>objects\obj_Vick_Bullet</object>
+    <object>objects\obj_Picnic_Bullet</object>
+    <object>objects\obj_Richard_Bullet</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\testing_room_1</room>
