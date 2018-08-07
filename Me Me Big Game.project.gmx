@@ -9,6 +9,10 @@
     <sprites name="Player Sprites">
       <sprites name="Nick">
         <sprite>sprites\spr_Nick_Bullet_All</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Landing</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Falling</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Jumping</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Idle</sprite>
         <sprite>sprites\spr_Nick_Bullet_Walking</sprite>
       </sprites>
       <sprites name="Richard">
