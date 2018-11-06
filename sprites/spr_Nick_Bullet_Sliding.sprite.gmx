@@ -20,13 +20,6 @@
   <width>64</width>
   <height>64</height>
   <frames>
-    <frame index="0">images\spr_Nick_Bullet_Walking_0.png</frame>
-    <frame index="1">images\spr_Nick_Bullet_Walking_1.png</frame>
-    <frame index="2">images\spr_Nick_Bullet_Walking_2.png</frame>
-    <frame index="3">images\spr_Nick_Bullet_Walking_3.png</frame>
-    <frame index="4">images\spr_Nick_Bullet_Walking_4.png</frame>
-    <frame index="5">images\spr_Nick_Bullet_Walking_5.png</frame>
-    <frame index="6">images\spr_Nick_Bullet_Walking_6.png</frame>
-    <frame index="7">images\spr_Nick_Bullet_Walking_7.png</frame>
+    <frame index="0">images\spr_Nick_Bullet_Sliding_0.png</frame>
   </frames>
 </sprite>

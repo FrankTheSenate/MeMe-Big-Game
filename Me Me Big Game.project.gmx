@@ -14,6 +14,7 @@
         <sprite>sprites\spr_Nick_Bullet_Jumping</sprite>
         <sprite>sprites\spr_Nick_Bullet_Idle</sprite>
         <sprite>sprites\spr_Nick_Bullet_Walking</sprite>
+        <sprite>sprites\spr_Nick_Bullet_Sliding</sprite>
       </sprites>
       <sprites name="Richard">
         <sprite>sprites\spr_Richard_Bullet_All</sprite>

@@ -33,6 +33,7 @@ jspd = 15
 movespeed = 5
 image_speed = 0.3
 image_index = 1
+slidegrav = 0.1
 </string>
           </argument>
         </arguments>
@@ -59,9 +60,20 @@ image_index = 1
 right = keyboard_check(ord("D"))
 left = -keyboard_check(ord("A"))
 
+//Dynamic Jump + Movement
 move = left + right
 hspd = move * movespeed
-if (vspd &lt; 20) vspd += grav
+
+if (vspd &lt; 15)
+{
+vspd += grav
+}
+
+if (vspd &lt; 0) and !jump
+{
+vspd = max(vspd, -jspd/2)
+}
+
 
 //jamp
 if (place_meeting(x, y+1, obj_grass))
@@ -69,10 +81,12 @@ if (place_meeting(x, y+1, obj_grass))
     vspd = jump * -jspd
 }
 
+
+
 //vertical touchwall
 if (place_meeting(x, y+vspd, obj_grass))
 {
-    while(!place_meeting(x, y+sign(vspd), obj_grass))
+    while(!place_meeting(x, y+sign(vspd)*2, obj_grass))
     {
         y+= sign(vspd)
     }
@@ -176,6 +190,22 @@ if sprite_index = spr_Nick_Bullet_Idle and image_xscale = 1 and keyboard_check(o
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>223</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_current_room</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
