@@ -27,22 +27,24 @@
       </sprites>
     </sprites>
     <sprites name="Platforms">
-      <sprite>sprites\spr_Grass_Left</sprite>
-      <sprite>sprites\spr_Grass_Mid</sprite>
-      <sprite>sprites\spr_Grass_Right</sprite>
-      <sprite>sprites\spr_Grass_Short</sprite>
-      <sprite>sprites\spr_Dirt_Core</sprite>
-      <sprite>sprites\spr_Dirt_Middle_Bottom</sprite>
-      <sprite>sprites\spr_Dirt_Corner_Left</sprite>
-      <sprite>sprites\spr_Dirt_Corner_Right</sprite>
-      <sprite>sprites\spr_Dirt_Bottom</sprite>
-      <sprite>sprites\spr_DirtGrass_Left</sprite>
-      <sprite>sprites\spr_DirtGrass_Right</sprite>
-      <sprite>sprites\spr_DirtGrass_Nub</sprite>
-      <sprite>sprites\spr_DirtGrass_Middle</sprite>
-      <sprite>sprites\spr_Dirt_Right</sprite>
-      <sprite>sprites\spr_Dirt_Left</sprite>
-      <sprite>sprites\spr_Dirt_Left_Right</sprite>
+      <sprites name="Grass/Dirt">
+        <sprite>sprites\spr_Dirt_Left_Right</sprite>
+        <sprite>sprites\spr_Dirt_Left</sprite>
+        <sprite>sprites\spr_Dirt_Right</sprite>
+        <sprite>sprites\spr_DirtGrass_Middle</sprite>
+        <sprite>sprites\spr_DirtGrass_Nub</sprite>
+        <sprite>sprites\spr_DirtGrass_Right</sprite>
+        <sprite>sprites\spr_DirtGrass_Left</sprite>
+        <sprite>sprites\spr_Dirt_Corner_Right</sprite>
+        <sprite>sprites\spr_Dirt_Bottom</sprite>
+        <sprite>sprites\spr_Dirt_Corner_Left</sprite>
+        <sprite>sprites\spr_Dirt_Middle_Bottom</sprite>
+        <sprite>sprites\spr_Dirt_Core</sprite>
+        <sprite>sprites\spr_Grass_Short</sprite>
+        <sprite>sprites\spr_Grass_Right</sprite>
+        <sprite>sprites\spr_Grass_Left</sprite>
+        <sprite>sprites\spr_Grass_Mid</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background"/>

@@ -30,10 +30,13 @@ grav = 1
 hspd = 0
 vspd = 0
 jspd = 15
-movespeed = 5
+movespeed = 8
 image_speed = 0.3
 image_index = 1
 slidegrav = 0.1
+isslideright = false
+isslideleft = false
+timer[0] = 0
 </string>
           </argument>
         </arguments>
@@ -59,6 +62,21 @@ slidegrav = 0.1
             <string>jump = keyboard_check(ord("W"))
 right = keyboard_check(ord("D"))
 left = -keyboard_check(ord("A"))
+isslideright = false
+isslideleft = false
+
+//Cool walljump stuff
+if place_meeting(x+1, y, obj_grass) and !place_meeting(x, y+1 , obj_grass) and !right and jump and left
+{
+vspd = jump * -jspd
+
+}
+
+if (place_meeting(x-1, y, obj_grass) and !place_meeting(x, y+1 , obj_grass) and !left and jump and right)
+{
+vspd = jump * -jspd
+}
+
 
 //Dynamic Jump + Movement
 move = left + right
@@ -94,16 +112,63 @@ if (place_meeting(x, y+vspd, obj_grass))
 }
 y+= vspd
 
-//horizontal touchwall
+//Slide Jumpstuff
+
+if jump and right and isslideleft = true
+{
+    vspd = jump * -jspd
+}
+if jump and left and isslideright = true 
+{
+    vspd = jump * -jspd
+}
+
+
+//horizontal touchwall + sliding
 if (place_meeting(x+hspd, y, obj_grass))
 {
     while(!place_meeting(x+sign(hspd), y, obj_grass))
     {
         x+= sign(hspd)
     }
+    if sign(hspd) = -1
+    {
+    isslideleft = true
+    }
+    if sign(hspd) = 1
+    {
+    isslideright = true
+    }
+
     hspd = 0
+    
 }
+
 x+= hspd
+
+if isslideright = true and !left
+{
+vspd = 0.1
+}
+
+if isslideleft = true and !right
+{
+vspd = 0.1
+}
+
+
+if !(place_meeting(x+1, y, obj_grass))
+{
+grav = 1
+isslideright = false
+}
+
+if !(place_meeting(x-1, y, obj_grass))
+{
+grav = 1
+isslideleft = false
+}
+
 
 
 
